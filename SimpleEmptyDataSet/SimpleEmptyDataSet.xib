@@ -14,10 +14,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleEmptyDataSet" customModule="SimpleEmptyDataSet" customModuleProvider="target">
             <connections>
                 <outlet property="errorDescriptionLabel" destination="d5J-n1-jHy" id="DHh-CT-JXV"/>
+                <outlet property="errorDescriptionLabel_bottom_container" destination="bQ2-se-lrS" id="OKp-4l-9k7"/>
                 <outlet property="errorDescriptionLabel_top_errorImageView" destination="LSF-uk-Jb0" id="m0x-sY-Wii"/>
                 <outlet property="errorDescriptionLabel_top_errorTitelLabel" destination="jHR-6p-h5Q" id="3dG-wD-8EO"/>
                 <outlet property="errorImageView" destination="5yd-Xb-cfk" id="LM8-bz-oON"/>
                 <outlet property="errorTitleLabel" destination="tJE-fI-iH9" id="8CK-jc-hrU"/>
+                <outlet property="errorTitleLabel_bottom_container" destination="AAe-sn-ULG" id="qD0-PP-68i"/>
                 <outlet property="errorView" destination="o0u-wR-K4d" id="HDS-1C-qt3"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Kz7-GD-ymD"/>
             </connections>
@@ -44,13 +46,15 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Photos and videos directly to your friends. Only the people you send can see these posts." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5J-n1-jHy">
                             <rect key="frame" x="0.0" y="162" width="300" height="65"/>
+                            <color key="backgroundColor" red="0.32549019610000002" green="0.73333333329999995" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tJE-fI-iH9" secondAttribute="bottom" priority="1" constant="20" id="AAe-sn-ULG"/>
                         <constraint firstItem="5yd-Xb-cfk" firstAttribute="width" secondItem="o0u-wR-K4d" secondAttribute="width" multiplier="0.3" id="Btg-Jm-OoT"/>
                         <constraint firstItem="d5J-n1-jHy" firstAttribute="leading" secondItem="o0u-wR-K4d" secondAttribute="leading" id="DwW-wq-6nf"/>
                         <constraint firstAttribute="trailing" secondItem="tJE-fI-iH9" secondAttribute="trailing" id="JKB-tV-E3k"/>
@@ -59,7 +63,7 @@
                         <constraint firstItem="tJE-fI-iH9" firstAttribute="leading" secondItem="o0u-wR-K4d" secondAttribute="leading" id="URd-8a-2FK"/>
                         <constraint firstItem="5yd-Xb-cfk" firstAttribute="centerX" secondItem="o0u-wR-K4d" secondAttribute="centerX" id="XYp-Pr-srN"/>
                         <constraint firstItem="tJE-fI-iH9" firstAttribute="top" secondItem="5yd-Xb-cfk" secondAttribute="bottom" constant="20" id="YuP-yx-aLx"/>
-                        <constraint firstAttribute="bottom" secondItem="d5J-n1-jHy" secondAttribute="bottom" constant="20" id="bQ2-se-lrS"/>
+                        <constraint firstAttribute="bottom" secondItem="d5J-n1-jHy" secondAttribute="bottom" priority="999" constant="20" id="bQ2-se-lrS"/>
                         <constraint firstItem="d5J-n1-jHy" firstAttribute="top" secondItem="tJE-fI-iH9" secondAttribute="bottom" priority="999" constant="20" id="jHR-6p-h5Q"/>
                         <constraint firstAttribute="trailing" secondItem="d5J-n1-jHy" secondAttribute="trailing" id="uys-i2-4ZU"/>
                     </constraints>

@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         emptyDataSet = SimpleEmptyDataSet(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
         view.addSubview(emptyDataSet)
         
-        emptyDataSet.showError(title: nil, message: "Send Photos and videos directly to your friends. Only the people you send can see these posts.", image: #imageLiteral(resourceName: "ErrorMessage"))
+        emptyDataSet.showError(title: "Instagram Posts", message: nil, image: #imageLiteral(resourceName: "ErrorMessage"))
     }
     
 }

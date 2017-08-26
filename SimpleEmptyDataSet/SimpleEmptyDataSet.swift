@@ -20,6 +20,9 @@ class SimpleEmptyDataSet: UIView {
     
     @IBOutlet weak var errorDescriptionLabel_top_errorTitelLabel: NSLayoutConstraint!
     @IBOutlet weak var errorDescriptionLabel_top_errorImageView: NSLayoutConstraint!
+    @IBOutlet weak var errorDescriptionLabel_bottom_container: NSLayoutConstraint!
+    @IBOutlet weak var errorTitleLabel_bottom_container: NSLayoutConstraint!
+    
     
     
     override init(frame: CGRect) {
