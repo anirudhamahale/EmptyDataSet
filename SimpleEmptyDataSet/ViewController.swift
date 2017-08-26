@@ -10,16 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var emptyDataSet: SimpleEmptyDataSet!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        emptyDataSet = SimpleEmptyDataSet(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
+        view.addSubview(emptyDataSet)
+        
+        emptyDataSet.showError(title: nil, message: "Send Photos and videos directly to your friends. Only the people you send can see these posts.", image: #imageLiteral(resourceName: "ErrorMessage"))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
